@@ -20,7 +20,7 @@ public class TasksTest {
 		//ChromeOptions cap = new ChromeOptions(); 
 		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.175:4444/wd/hub"), cap);	
 		driver.navigate().to("http://192.168.0.175:8001/tasks/");
-		driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30 , TimeUnit.SECONDS);
 		return driver;
 	}
 	
@@ -30,7 +30,7 @@ public class TasksTest {
 		
 		try {
 //			driver.navigate().to("http://localhost:8001/tasks/");
-//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			//Escrever a descrição
@@ -55,7 +55,7 @@ public class TasksTest {
 		
 		try {
 //			driver.navigate().to("http://localhost:8001/tasks/");
-//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+		//	driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			
@@ -80,7 +80,7 @@ public class TasksTest {
 		
 		try {
 //			driver.navigate().to("http://localhost:8001/tasks/");
-//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			//Escrever a descrição
@@ -105,7 +105,7 @@ public class TasksTest {
 		
 		try {
 //			driver.navigate().to("http://localhost:8001/tasks/");
-//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+		//	driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			//Escrever a descrição
