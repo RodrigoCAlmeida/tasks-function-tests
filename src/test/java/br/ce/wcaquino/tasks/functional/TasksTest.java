@@ -8,7 +8,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -18,6 +17,7 @@ public class TasksTest {
 	public WebDriver acessarAplicacao() throws MalformedURLException {
 		//WebDriver driver = new ChromeDriver();	
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		//ChromeOptions cap = new ChromeOptions(); 
 		WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.175:4444/wd/hub"), cap);	
 		driver.navigate().to("http://192.168.0.175:8001/tasks/");
 		driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
@@ -29,8 +29,8 @@ public class TasksTest {
 		WebDriver driver = 	acessarAplicacao();
 		
 		try {
-			driver.navigate().to("http://localhost:8001/tasks/");
-			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+//			driver.navigate().to("http://localhost:8001/tasks/");
+//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			//Escrever a descrição
@@ -54,8 +54,8 @@ public class TasksTest {
 		WebDriver driver = 	acessarAplicacao();
 		
 		try {
-			driver.navigate().to("http://localhost:8001/tasks/");
-			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+//			driver.navigate().to("http://localhost:8001/tasks/");
+//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			
@@ -79,8 +79,8 @@ public class TasksTest {
 		WebDriver driver = 	acessarAplicacao();
 		
 		try {
-			driver.navigate().to("http://localhost:8001/tasks/");
-			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+//			driver.navigate().to("http://localhost:8001/tasks/");
+//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			//Escrever a descrição
@@ -104,8 +104,8 @@ public class TasksTest {
 		WebDriver driver = 	acessarAplicacao();
 		
 		try {
-			driver.navigate().to("http://localhost:8001/tasks/");
-			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
+//			driver.navigate().to("http://localhost:8001/tasks/");
+//			driver.manage().timeouts().implicitlyWait(10 , TimeUnit.SECONDS);
 			//clicar em Add Todo
 			driver.findElement(By.id("addTodo")).click();
 			//Escrever a descrição
